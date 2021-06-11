@@ -8,9 +8,10 @@ project(unmlc
 
 include_directories(include)
 
-file(GLOB libunml_sources src/*.c)
 add_library(unmlc
-	${libunml_sources}
+	src/unml.c
+	src/document.c
+	src/element.c
 )
 
 
